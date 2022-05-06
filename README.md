@@ -52,7 +52,7 @@
 
 ## 联系方式
 
-1. 在线观看 **「Coding with Filecoin」** 课程。
+1. [在线观看 **「Coding with Filecoin」** 课程](http://www.studycn.work)。
 
    
 
