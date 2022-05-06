@@ -1,6 +1,6 @@
 # Coding-with-Filecoin-Homework
 
-<img src="/Users/longfeiwang/Documents/GitHub/Coding-with-Filecoin-Homework/assets/coding-with-filecoin.jpg" alt="coding-with-filecoin" style="zoom:40%;" />
+<img src="./assets/coding-with-filecoin.jpg" alt="coding-with-filecoin" style="zoom:40%;" />
 
 ## 课程简介
 
@@ -51,6 +51,17 @@
 ## 联系方式
 
 1. 在线观看**「Coding with Filecoin」** 课程。
+
+   
+
 2. 扫描微信二维码，加入**Filecoin 分布式存储实战教程 ——“Coding with Filecoin”**课程社群。
+
+   <img src="./assets/wechat_group.png" alt="wechat_group" style="zoom: 25%;" />
+
 3. 扫描二维码关注 Filecoin 微信公众号「Filecoin-Official」。
+
+   <img src="./assets/wechat_account.png" alt="wechat_account" style="zoom: 50%;" />
+
 4. 关注Filecoin 官方B站账号，获取课程作业以及更多 Filecoin 动态消息。
+
+   <img src="./assets/blibli.png" alt="blibli" style="zoom:50%;" />
