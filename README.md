@@ -60,10 +60,10 @@
 
    <img src="./assets/wechat_group.png" alt="wechat_group"/>
 
-3. 扫描二维码关注 Filecoin 微信公众号「Filecoin-Official」。
+3. 扫描二维码关注 Filecoin 微信公众号「Filecoin-Official」，获取课程作业以及更多 Filecoin 动态消息。
 
    <img src="./assets/wechat_account.png" alt="wechat_account"/>
 
-4. 关注Filecoin 官方B站账号，获取课程作业以及更多 Filecoin 动态消息。
+4. 关注Filecoin 官方B站账号FilecoinNetwork。
 
    <img src="./assets/blibli.png" alt="blibli"/>
