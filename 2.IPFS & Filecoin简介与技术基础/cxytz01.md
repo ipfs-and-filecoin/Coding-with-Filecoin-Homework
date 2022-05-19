@@ -40,3 +40,4 @@ Filecoin可以永久保存文件，需要用户向链上续约。
 FVM的到来会使Filecoin的交易变得更加方便。Filecoin基础协议定义了Filecoin交易原语(api、命令)，链上提供了有限的基于交易原语构建的actor(smart contract)来支撑Filecoin的基础能力，但是复杂逻辑依然需要用户使用Filecoin提供的交易原语进行构建。FVM的出现开启了无限的可能性，从可编程存储原语(如存储奖励、拍卖等)，到跨链互操作性桥梁(如Filecoin与以太坊、Solana、NEAR等的无信任连接)，到以数据为中心的去中心化自治组织(DAOs)，到第二层解决方案(如声誉系统、数据可用性抽样、计算结构和激励内容分发网络)等等。其中：Perpetual storage，Perpetual storage, Perpetual storage, Repair workers都将使整个交易生态更加的自动化。
 
 ### 5. 为何Filecoin+ 现在免费给客户提供存储？它的初衷是什么？
+a
