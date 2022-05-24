@@ -50,6 +50,36 @@ n) Open source code -- The code that runs both clients and storage providers is 
 o) Active community -- Filecoin has an active community of contributors to answer questions and help newcomers get started. 
 
 ### 2. 为什么 Filecoin 要引入 tipset 机制？
+Filecoin认为对于提供了同样存储的每一个节点都应该得到同样的奖励。因此Filecoin引入了tipset机制：Filecoin中一个高度上可以存在多个block，其中的多个block都是可以获取收益的。由同一组高度相同，且父块(tipset)相同的block组成一个tipset。
 ### 3. Filecoin 在复制证明的过程中引入了哪些参数和过程来防止女巫攻击，生成攻击和外包攻击？
+PoRep、PoSt中用到了可验证时延加密算法，目前是通过BLS12-381加密算法，多次迭代完成。在可验证时延加密算法中，需要用到零知识证明方法(zk-SNARK)。
+
+具体细节是：
+由hash(树根commD，minerID，sectorID，来自链上的随机数，algorithm version) 生成 replica_id。
+a) 带入minerID使得每一份数据都是和存储提供商绑定，防止外源攻击。
+b) 带入sectorID确保每一份数据都是独立的，防止了女巫攻击。
+c) 使用relica_id作为Stacked Depth Robust Graphs构成元素，由于SDRG的复杂性，其生成工作是缓慢的，保证了复制发生的工作量，防止了生成攻击。
+
 ### 4. Filecoin 是怎么使存储服务商提供稳定的服务的？
+Filecoin是IPFS之上的激励层，因此促使存储服务商提供稳定服务的方式依赖于激励机制的设计，即奖励和惩罚机制。
+
+Filecoin的奖惩机制源自于PoX机制，分别有：Proof-of-Storage、Provable Data PoSsession、Proof-of-Retrievability、Proof-of-Replication、Proof-of-Space、Proof-of-Spacetime.
+
+Filecoin系统内有几个角色和过程：challenge、prover、verifier、data、proof。网络内通过定义好的规则向prover(miner)发起挑战，prover(被挑战者如果失败则会被系统扣除质押的代币奖励，prover响应挑战成功则会获得网络释放的质押代币。
+
+奖励机制：
+1. 对于为用户存储数据的存储提供商节点，其可以在网络中参加领导人选举，获取网络给予的创建区块奖励
+2. 对于为用户存储数据的存储提供商节点，其还可以获取由用户提供的存储费用。
+3. 对于为用户提供检索数据服务的检索提供商节点，其可以获取用户提供的检索费用。
+4. 对于网络中非法行为的监督节点，成功举报非法行为之后可以获取对应的举报金。
+
+惩罚机制：
+1. 未能按时提交windowpost的存储提供商，网络会按照错误扇区的比例罚没一定的费用。
+2. 对于未能按照扇区声明的生命周期完成服务，而提前终止扇区的存储提供商，网络会罚没一定的费用。
+3. 对于违反EC共识、提交错误windowpost的存储提供商，网络会罚没一定的费用。
+
 ### 5. Filecoin 为什么要各种语言/架构实现的版本？这给整个网络带来了哪些好处？
+将去中心化进行到底，增加生态多样性。
+a) 如果整个生态中使用不同的语言，或者相同的语言不同的架构，或者相同的语言相同的架构但不同的开发人员，将会大大降低所有节点同时发生相同bug的几率。降低整个网络因为同一个bug而导致网络瘫痪的可能性。
+b) 吸引不同语言生态的开发人员加入
+c) 探索不同架构来满足不同的应用场景
