@@ -50,6 +50,8 @@ n) Open source code -- The code that runs both clients and storage providers is 
 o) Active community -- Filecoin has an active community of contributors to answer questions and help newcomers get started. 
 
 ### 2. 为什么 Filecoin 要引入 tipset 机制？
+The following is taken from: https://www.bitdegree.org/crypto/learn/crypto-terms/what-is-tipset
+
 A tipset is a set of blocks that makes up a blockchain. Each block in a tipset has the same height and parent tipset.  Since the Expected Consensus (EC) system of Filecoin is election-based and allows many miners to be elected leaders in a round, its consensus process is dependent on tipsets.
 
 This means that Filecoin (or any other similar system) allows multiple storage miners to create blocks in a single epoch, increasing network throughput.
@@ -59,7 +61,6 @@ Besides, the use of tipsets to build a blockchain can also help with the securit
 Since decentralized storage systems inherently prioritize chains that offer more storage, the advantage of employing a tipset system is that miners will group together to promote the heaviest chain or the chain that is providing value. Due to the fact that lighter chains don't have the draw of larger storage power, they become orphan blocks.
 
 The tipset system of Filecoin is similar to Ethereum in that it encourages members to collaborate and avoids wasting time by increasing chain throughput.
-                https://www.bitdegree.org/crypto/learn/crypto-terms/what-is-tipset
 
 ### 3. Filecoin 在复制证明的过程中引入了哪些参数和过程来防止女巫攻击，生成攻击和外包攻击？
 PoRep、PoSt中用到了可验证时延加密算法，目前是通过BLS12-381加密算法，多次迭代完成。在可验证时延加密算法中，需要用到零知识证明方法(zk-SNARK)。
