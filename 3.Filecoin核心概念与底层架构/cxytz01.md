@@ -17,7 +17,7 @@ Filecoin builds on the content addressing of IPFS to add longer term data persis
  * Content retrieval might be offered by storage providers directly, or by specialized retrieval storage providers. The user requesting the data pays for this service.
  * Filecoin excels at storing large amounts of data for long periods of time.
 
-二. why filecoin? -- https://docs.filecoin.io/about-filecoin/why-filecoin/
+二. Why Filecoin? -- https://docs.filecoin.io/about-filecoin/why-filecoin/
 
 a) Verifiable storage -- Filecoin has built-in processes to check the history of files and verify that they have been stored correctly over time. Every storage provider proves that they are maintaining their files in every 24-hour window.
 
