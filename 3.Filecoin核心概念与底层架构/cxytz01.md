@@ -2,6 +2,7 @@
 
 ### 1. 尽管 IPFS 网络已经达到相当大的规模，为什么我们还要构造 Filecoin 这样一个网络？
 一. IPFS and Filecoin -- https://docs.filecoin.io/about-filecoin/ipfs-and-filecoin/
+
 Filecoin and IPFS are complementary protocols for storing and sharing data in the distributed web. 
 
 IPFS alone does not include a built-in mechanism to incentivize the storage of data for *other* people. This is the challenge Filecoin aims to solve. Filecoin is built on IPFS to create a distributed storage marketplace for long-term storage. Nodes with a large storage capacity can rent their storage to users and get paid for it.
