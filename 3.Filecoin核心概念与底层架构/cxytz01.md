@@ -1,6 +1,6 @@
 # 「3」Filecoin核心概念与底层架构 - 课后作业
 
-### 1. 尽管 IPFS 网络已经达到相当大的规模，为什么我们还要构造 Filecoin 这样一个网络？
+#### 1. 尽管 IPFS 网络已经达到相当大的规模，为什么我们还要构造 Filecoin 这样一个网络？
 一. IPFS and Filecoin -- https://docs.filecoin.io/about-filecoin/ipfs-and-filecoin/
 
 Filecoin and IPFS are complementary protocols for storing and sharing data in the distributed web. 
@@ -49,7 +49,7 @@ n) Open source code -- The code that runs both clients and storage providers is 
 
 o) Active community -- Filecoin has an active community of contributors to answer questions and help newcomers get started. 
 
-### 2. 为什么 Filecoin 要引入 tipset 机制？
+#### 2. 为什么 Filecoin 要引入 tipset 机制？
 The following is taken from: https://www.bitdegree.org/crypto/learn/crypto-terms/what-is-tipset
 
 A tipset is a set of blocks that makes up a blockchain. Each block in a tipset has the same height and parent tipset.  Since the Expected Consensus (EC) system of Filecoin is election-based and allows many miners to be elected leaders in a round, its consensus process is dependent on tipsets.
@@ -62,7 +62,7 @@ Since decentralized storage systems inherently prioritize chains that offer more
 
 The tipset system of Filecoin is similar to Ethereum in that it encourages members to collaborate and avoids wasting time by increasing chain throughput.
 
-### 3. Filecoin 在复制证明的过程中引入了哪些参数和过程来防止女巫攻击，生成攻击和外包攻击？
+#### 3. Filecoin 在复制证明的过程中引入了哪些参数和过程来防止女巫攻击，生成攻击和外包攻击？
 PoRep、PoSt中用到了可验证时延加密算法，目前是通过BLS12-381加密算法，多次迭代完成。在可验证时延加密算法中，需要用到零知识证明方法(zk-SNARK)。
 
 具体细节是：
@@ -71,7 +71,7 @@ a) 带入minerID使得每一份数据都是和存储提供商绑定，防止外�
 b) 带入sectorID确保每一份数据都是独立的，防止了女巫攻击。
 c) 使用relica_id作为Stacked Depth Robust Graphs构成元素，由于SDRG的复杂性，其生成工作是缓慢的，保证了复制发生的工作量，防止了生成攻击。
 
-### 4. Filecoin 是怎么使存储服务商提供稳定的服务的？
+#### 4. Filecoin 是怎么使存储服务商提供稳定的服务的？
 Filecoin是IPFS之上的激励层，因此促使存储服务商提供稳定服务的方式依赖于激励机制的设计，即奖励和惩罚机制。
 
 Filecoin的奖惩机制源自于PoX机制，分别有：Proof-of-Storage、Provable Data PoSsession、Proof-of-Retrievability、Proof-of-Replication、Proof-of-Space、Proof-of-Spacetime.
@@ -89,7 +89,7 @@ Filecoin系统内有几个角色和过程：challenge、prover、verifier、data
 2. 对于未能按照扇区声明的生命周期完成服务，而提前终止扇区的存储提供商，网络会罚没一定的费用。
 3. 对于违反EC共识、提交错误windowpost的存储提供商，网络会罚没一定的费用。
 
-### 5. Filecoin 为什么要各种语言/架构实现的版本？这给整个网络带来了哪些好处？
+#### 5. Filecoin 为什么要各种语言/架构实现的版本？这给整个网络带来了哪些好处？
 将去中心化进行到底，增加生态多样性。
 a) 如果整个生态中使用不同的语言，或者相同的语言不同的架构，或者相同的语言相同的架构但不同的开发人员，将会大大降低所有节点同时发生相同bug的几率。降低整个网络因为同一个bug而导致网络瘫痪的可能性。
 b) 吸引不同语言生态的开发人员加入
