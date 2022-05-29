@@ -38,5 +38,3 @@ filecoin网络通过经济模型和证明机制来实现存储市场。
 
 吸引更多的开发人员加入Filecoin生态，来对软件进行不同层面的优化，探索不同的软件架构来满足不同的应用场景。
 ```
-
-<details class="details-reset details-overlay details-overlay-dark" id="jumpto-line-details-dialog" style="box-sizing: border-box; display: block;"><summary data-hotkey="l" aria-label="Jump to line" role="button" style="box-sizing: border-box; display: list-item; cursor: pointer; transition: color 80ms cubic-bezier(0.33, 1, 0.68, 1) 0s, background-color, box-shadow, border-color; list-style: none;"></summary></details
