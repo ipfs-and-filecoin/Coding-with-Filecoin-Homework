@@ -30,5 +30,3 @@ IPFS是互联网的底层协议，而filecoin是一种通证，是一种代币�
 使用存储服务的工具,可以更好的开发应用，开发者不必关心底层是如何实现的；
 使用Filecoin节点直接进行存储，适合有一定区块链开发经验的同学，要了解底层实现逻辑，门槛比较高。
 ```
-
-<details class="details-reset details-overlay details-overlay-dark" id="jumpto-line-details-dialog" style="box-sizing: border-box; display: block;"><summary data-hotkey="l" aria-label="Jump to line" role="button" style="box-sizing: border-box; display: list-item; cursor: pointer; transition: color 80ms cubic-bezier(0.33, 1, 0.68, 1) 0s, background-color, box-shadow, border-color; list-style: none;"></summary></details
