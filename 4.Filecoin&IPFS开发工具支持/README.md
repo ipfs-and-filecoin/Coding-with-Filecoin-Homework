@@ -22,9 +22,9 @@
 
 3. 完成作业以后，通过Pull Request提交作业合并到该代码库。
 
-   > Pull request 标题命名规则：`课后作业2 ：你的名字`
+   > Pull request 标题命名规则：`课后作业4 ：你的名字`
    >    
-   > 例如：`课后作业2 ：张三` 或者 `Homework 2 ：Johnson`
+   > 例如：`课后作业4 ：张三` 或者 `Homework 4 ：Johnson`
 
 4. 讲师以及Filecoin技术推广工程师会评审所有提交的作业，并合并到该代码库。
 
