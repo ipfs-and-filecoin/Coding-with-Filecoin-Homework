@@ -1,0 +1,5 @@
+mnemonic: appear treat coffee stand prison need cattle filter famous machine raven wonder
+
+encryptedWallet:  {"encSeed":{"encStr":"yFNWNT+ITlr7r31gtrbv8SxMmKECR3MuGIm1tGJaksaedxHK322rJmNuR1RbzxqKX+gLgY2SAdY/Cayp47XyJ/fRQ0mvJC4cUl1SUA6kTSUVaWe6N2DUBrAbxdFKSLiLMmRmFBmnz5VZXzdduAtbgZb2Cxtc/ZaTFV1nkb7IRDx0fSPXv4H1Jw==","nonce":"m8Gi4mXGgDK1l1208KaaG6X9t6/qG1eV"},"addresses":["t1x2ib5av34yebefzeesec63mgsuukre5aoc5iwxy"],"encPrivKeys":{"t1x2ib5av34yebefzeesec63mgsuukre5aoc5iwxy":{"key":"7Cd86JrEAjIArD+GAZT//ZB3/GHdPVE+26Ed5eBh2EKfYupT2HDHVf13INGeD5bO","nonce":"ka4AAiztDGNI9wuefcuFsomlF6yPhSPt"}},"hdPathString":"m/44'/1'/0/0","salt":"9byAuevHO3R445JZC1+x5pQIihwU0f9juOYa8jLL0vM=","hdIndex":2,"version":1}
+
+lightWallet by default address:  t1x2ib5av34yebefzeesec63mgsuukre5aoc5iwxy
