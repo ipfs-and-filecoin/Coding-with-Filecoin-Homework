@@ -3,6 +3,7 @@ import BigNumber from 'bignumber.js';
 
 //Node connect
 const localNodeUrl   = "http://127.0.0.1:1234/rpc/v0";
+//lotus auth create-token --perm sign
 const signAuthToken  = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIl19.7vMxgi7UazLneoxHs1x9tucjglwq1sG7dRYFgXynOjc";
 const httpConnector  = new HttpJsonRpcConnector({url:localNodeUrl,token:signAuthToken});
 const lotusClient    = new LotusClient(httpConnector);
