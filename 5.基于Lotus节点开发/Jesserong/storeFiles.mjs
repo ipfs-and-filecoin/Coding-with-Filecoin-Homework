@@ -2,6 +2,7 @@ import { HttpJsonRpcConnector, LotusWalletProvider , LotusClient } from "filecoi
 
 //Node connect
 const localNodeUrl   = "http://127.0.0.1:1234/rpc/v0";
+//lotus auth create-token --perm admin
 const adminAuthToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJBbGxvdyI6WyJyZWFkIiwid3JpdGUiLCJzaWduIiwiYWRtaW4iXX0.PHltWihrB-uwsRdsbEVqaYVua-HaQweK_b7VArJe2wM";
 const httpConnector  = new HttpJsonRpcConnector({url:localNodeUrl,token:adminAuthToken});
 const lotusClient    = new LotusClient(httpConnector);
@@ -19,6 +20,7 @@ async function storeFile() {
 		console.log(importResult.Root);
 
 		//2.想存储服务提供商询价
+		//lotus client list-asks (查看存储服务提供商)
 		const spAddr = 't022105';
 		const queryOffer = await lotusClient.client.minerQueryOffer(spAddr,importResult.Root);
 
