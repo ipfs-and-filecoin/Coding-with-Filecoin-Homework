@@ -53,7 +53,7 @@ func storeFile(file string) {
 			Miner:             minerAddr,
 			EpochPrice:        types.NewInt(200000000),
 			MinBlocksDuration: 518400,
-			VerifiedDeal:      true,
+			VerifiedDeal:      false,
 		}
 
 		dealCID, err := apiClient.ClientStartDeal(context.Background(), param)

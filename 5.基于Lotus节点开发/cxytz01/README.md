@@ -4,6 +4,6 @@
 go mod tidy && go build && ./lotus-dev
 ```
 
-storeFile CID: bafyreiak35brnsqek4wh4l5gxr3btw4bvmoxu7tug2odbgzxic4prrsafm
+storeFile CID: bafyreiflvl533xhhwvyxjmfafiab7cik45grr3fwaoywsumez42o66ifje
 
 I don't have any idea how to create light wallet with jsonrpc.
