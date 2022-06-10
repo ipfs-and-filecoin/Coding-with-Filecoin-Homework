@@ -45,6 +45,8 @@ func main() {
 	// newWallet()
 	// WalletBalance("t1ulqdr6x4pun6yktl5uh74fxg746sqgiwffy5p2y")
 	// transferFIL("t1ulqdr6x4pun6yktl5uh74fxg746sqgiwffy5p2y", "t1hq3fbn3yac62lwzemppu5dw2l3yiss5j3r7jx4a", 9223372036854775807 /*是int64最大的值了*/)
+	// transferFILWithAutoEstimation("t1ulqdr6x4pun6yktl5uh74fxg746sqgiwffy5p2y", "t1hq3fbn3yac62lwzemppu5dw2l3yiss5j3r7jx4a", 1 /*是int64最大的值了*/)
+
 }
 
 func string2Address(ID string) address.Address {

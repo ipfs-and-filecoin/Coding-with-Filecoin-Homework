@@ -7,6 +7,7 @@ import (
 
 	"github.com/filecoin-project/go-address"
 	"github.com/filecoin-project/go-state-types/abi"
+	"github.com/filecoin-project/lotus/api"
 	"github.com/filecoin-project/lotus/chain/types"
 )
 
@@ -82,4 +83,31 @@ func transferFIL(from, to string, value int64) {
 	}
 
 	fmt.Printf("cid: %v\n", cid)
+}
+
+func transferFILWithAutoEstimation(from, to string, value int64) {
+	defaultWallet, err := apiClient.WalletDefaultAddress(context.Background())
+	if err != nil {
+		log.Fatalf("get default wallet err :%v\n", err)
+	}
+	fmt.Printf("default wallet address is: %v\n", defaultWallet.String())
+
+	m := &types.Message{
+		To:       string2Address(to),
+		From:     string2Address(from),
+		Value:    abi.NewTokenAmount(value),
+		Method:   0,
+		Params:   nil,
+		GasLimit: 20000000,
+	}
+
+	// https://lotus.filecoin.io/reference/lotus/mpool/#mpoolpushmessage
+	// https://docs.filecoin.io/reference/exchanges/#mpoolpushmessagehttpslotusfilecoiniodocsapisjson-rpcmpoolpushmessage
+	// 该接口存在问题，拿不到CID，但是上面链接的http方式可以拿到cid.
+	signedMessage, err := apiClient.MpoolPushMessage(context.Background(), m, &api.MessageSendSpec{MaxFee: abi.NewTokenAmount(0)})
+	if err != nil {
+		log.Fatalf("mpool push message err :%v\n", err)
+	}
+
+	fmt.Printf("signed message: %v\n", signedMessage)
 }
