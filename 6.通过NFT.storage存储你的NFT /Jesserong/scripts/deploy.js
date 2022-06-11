@@ -1,0 +1,24 @@
+// We require the Hardhat Runtime Environment explicitly here. This is optional
+// but useful for running the script in a standalone fashion through `node <script>`.
+//
+// When running the script with `npx hardhat run <script>` you'll find the Hardhat
+// Runtime Environment's members available in the global scope.
+const { ethers } = require("hardhat");
+
+async function main() {
+  const CodingNFT = await ethers.getContractFactory("CodingNFT");
+  const codingNFT = await CodingNFT.deploy();
+  await codingNFT.deployed();
+
+  //0xB704863395D46382E5045C2b0f90219472BCBAae
+  console.log("CodingNFT deployed to:", codingNFT.address);
+}
+
+// We recommend this pattern to be able to use async/await everywhere
+// and properly handle errors.
+main()
+  .then(() => process.exit(0))
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
