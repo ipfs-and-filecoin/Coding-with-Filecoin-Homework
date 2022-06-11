@@ -13,8 +13,10 @@ describe("CodingNFT", function () {
         const user = await ethers.getSigner();
 
         // act
-        //0xa0c9cf8649ccacc186b69fe29518680421b63ea4323f68af921eb7266bb8a7e3
-        const tx = await codingNFT.connect(user).mint({value:price});
+        //ipfs://bafkreie4n6f4azto2tqnkl5ribmtmhvzchkkr6v3se5e5ucoxcu4dxfgcu
+        const _tokenURI = "ipfs://bafkreie4n6f4azto2tqnkl5ribmtmhvzchkkr6v3se5e5ucoxcu4dxfgcu";
+        //0xd7d3faccba91582a34f0397418311685fed5a33624ac4d6261e6557a6b3effbb
+        const tx = await codingNFT.connect(user).mint(_tokenURI,{value:price});
         await tx.wait();
 
         const id = await codingNFT.tokenCount();
@@ -30,8 +32,9 @@ describe("CodingNFT", function () {
         await codingNFT.deployed();
 
         const user = await ethers.getSigner();
-        
+        const _tokenURI = "ipfs://bafkreie4n6f4azto2tqnkl5ribmtmhvzchkkr6v3se5e5ucoxcu4dxfgcu";
+
         // assert
-        expect(codingNFT.connect(user).mint()).to.be.reverted;
+        expect(codingNFT.connect(user).mint(_tokenURI)).to.be.reverted;
     });
 });

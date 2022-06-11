@@ -10,7 +10,7 @@ async function main() {
   const codingNFT = await CodingNFT.deploy();
   await codingNFT.deployed();
 
-  //0xB704863395D46382E5045C2b0f90219472BCBAae
+  //0x05b9FEAd5d7E4A60e8Cf8C82604949106311eb28
   console.log("CodingNFT deployed to:", codingNFT.address);
 }
 

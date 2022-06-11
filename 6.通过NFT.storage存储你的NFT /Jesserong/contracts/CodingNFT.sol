@@ -10,11 +10,11 @@ contract CodingNFT is ERC721URIStorage {
 
     }
 
-    function mint() external payable {
+    function mint(string memory _tokenURI) external payable {
     	require (msg.value >= 0.001 ether,"CodingNFT: insufficient funds");
     	tokenCount ++;
-    	_mint(msg.sender,0);
-    	_setTokenURI(0,"ipfs://bafkreie4n6f4azto2tqnkl5ribmtmhvzchkkr6v3se5e5ucoxcu4dxfgcu");
+    	_mint(msg.sender,tokenCount);
+    	_setTokenURI(tokenCount,_tokenURI);
     }
     
 }
