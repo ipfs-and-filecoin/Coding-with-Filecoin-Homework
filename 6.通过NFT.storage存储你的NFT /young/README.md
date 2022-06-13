@@ -1,0 +1,8 @@
+# Basic Sample Hardhat Project
+
+contract Address : 0x5377D9388C37C7143E8735c67cCb747e5153eA68
+contract creation Hash : 0x5c525b8ab26b1aca2678c8d4b011bcf8c59b9118ada074d3015133f86a76ad60
+
+Owner Address : 0x2e55A4deF72Ab5e2988eCc7750FAdac973C55555
+
+NFT Hash : 0xfae2eda1f5a20665f7643da5bd1f382574cfb5f47649960622fd6b8bdacefd4d
