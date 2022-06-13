@@ -13,9 +13,9 @@ describe("CodingNFT", function () {
         const user = await ethers.getSigner();
 
         // act
-        //ipfs://bafkreie4n6f4azto2tqnkl5ribmtmhvzchkkr6v3se5e5ucoxcu4dxfgcu
+        // ipfs://bafkreie4n6f4azto2tqnkl5ribmtmhvzchkkr6v3se5e5ucoxcu4dxfgcu
         const _tokenURI = "ipfs://bafkreie4n6f4azto2tqnkl5ribmtmhvzchkkr6v3se5e5ucoxcu4dxfgcu";
-        //0xd7d3faccba91582a34f0397418311685fed5a33624ac4d6261e6557a6b3effbb
+        // 0xd7d3faccba91582a34f0397418311685fed5a33624ac4d6261e6557a6b3effbb
         const tx = await codingNFT.connect(user).mint(_tokenURI,{value:price});
         await tx.wait();
 
