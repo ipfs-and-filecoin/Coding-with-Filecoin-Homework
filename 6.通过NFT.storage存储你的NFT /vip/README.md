@@ -1,0 +1,3 @@
+1. nft作用：代表一种vip会员的身份，拥有nft的人可以享受会员特权
+2. nft合约地址：0x3EEdBD22944dE49b5E799e173A832Fb5153b8333(部署在ethereum goerli测试网)(由于infura的Polygon Mumbai测试网api需要填信用卡信息)
+3. 铸造NFT的交易ID：0x48efbcd281e7b83df49145608655a9584355ca595e33067b53b5edb37526ffd4

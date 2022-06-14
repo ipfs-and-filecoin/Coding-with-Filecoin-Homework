@@ -1,0 +1,14 @@
+{
+  "name": "build-with-lotus",
+  "version": "1.0.0",
+  "description": "For demo purpose",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zhuaiballl",
+  "license": "MIT",
+  "dependencies": {
+    "filecoin.js": "^0.0.5-alpha"
+  }
+}

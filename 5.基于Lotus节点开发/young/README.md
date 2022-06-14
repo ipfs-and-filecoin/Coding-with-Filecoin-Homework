@@ -1,0 +1,7 @@
+## 
+
+轻钱包地址 ： t1o5doelpvfaquee24kehegyckq2h3qr2lkqsgyti
+轻钱包转账Hash : bafy2bzacebcu3o4mtnvhqs27fswydtkikevkwlbisamzvfcukju4tdihrrero
+
+默认地址 ： t1xtzcl55f6ct7lrzdrddofun5wpikyto6nj53q5i
+存储交易CID ： bafyreifvtgfc5uvnvmt3n34zfo4ppk2fb2o6aegwa4sgivemleup37a7oy
