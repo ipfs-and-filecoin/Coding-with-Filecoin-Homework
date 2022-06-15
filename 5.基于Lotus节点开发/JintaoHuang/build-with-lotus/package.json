@@ -1,0 +1,18 @@
+{
+  "name": "build-with-lotus",
+  "version": "1.0.0",
+  "description": "filecoin nodejs demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lotus",
+    "API"
+  ],
+  "author": "Jintao.H",
+  "license": "MIT",
+  "dependencies": {
+    "filecoin.js": "^0.0.5-alpha"
+  }
+}
