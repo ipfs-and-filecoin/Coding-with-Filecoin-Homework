@@ -28,6 +28,9 @@ function App() {
               { sending ? <Sending setSendingState={setSendingState}/> : null }
               { ipfsError ? <Error setIpfsError={setIpfsError} setSendingState={setSendingState}/> : null }
             </Card.Body>
+            <Card.Footer>
+                <Card.Text>supported by alexzhou</Card.Text>
+            </Card.Footer>
           </Card>
       </Container>
     </div>
