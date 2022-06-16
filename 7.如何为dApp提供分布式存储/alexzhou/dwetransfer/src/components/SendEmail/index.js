@@ -1,12 +1,12 @@
-export const SendEmail = ({from, to, link}) => {
+export const SendEmail = ({to, link}) => {
     console.log(to);
     window.Email.send({
         // SecureToken: process.env.REACT_APP_EMAIL_SECURE_TOKEN,
-        Host: "smtp.elasticemail.com",
-        Username: "brishenzhou@qq.com",
-        Password: "863A38E7B7F18A2F054E2598DB023178B1DF",
+        Host: process.env.REACT_APP_EMAIL_HOST,
+        Username: process.env.REACT_APP_EMAIL_USERNAME,
+        Password: process.env.REACT_APP_EMAIL_PASSWORD,
         To: to,
-        From: from,
+        From: "brishenzhou@vip.qq.com",
         Subject: "IPFS File Download",
         Body: "File download address is " + link
     })
