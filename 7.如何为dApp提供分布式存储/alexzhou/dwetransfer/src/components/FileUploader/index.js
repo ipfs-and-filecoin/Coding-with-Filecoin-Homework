@@ -26,18 +26,9 @@ export const FileUploader = ({setCids, setIpfsError, setSendingState}) => {
 
         // check email
         if (! (/^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/.test(mailTo))) {
-            alert("mailTo is invalid e-mail address");
+            alert("invalid e-mail address");
             return false;
         }
-
-        // check email
-        if (! (/^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/.test(mailFrom))) {
-            alert("mailFrom is invalid e-mail address");
-            return false;
-        }
-
-        SendEmail({ from:mailFrom, to:mailTo, link:"lnk" });
-        return false;
 
         const client = new Web3Storage({ token: process.env.REACT_APP_WEB3STORAGE_API_TOKEN });
 
@@ -49,7 +40,7 @@ export const FileUploader = ({setCids, setIpfsError, setSendingState}) => {
             setCids([rootCid]);
 
             // send email
-            SendEmail({ from:mailFrom, to:mailTo, link:"https://" + rootCid + ".ipfs.dweb.link" });
+            SendEmail({ to:mailTo, link:"https://" + rootCid + ".ipfs.dweb.link" });
         } catch {
             setIpfsError(true);
             console.log("Failed to send to IPFS");
@@ -63,7 +54,6 @@ export const FileUploader = ({setCids, setIpfsError, setSendingState}) => {
             <Form method="post" action="#" id="#"  onSubmit={onSubmit}>
                 <Form.Group className="mb-3 form-group files">
                     <input type="text" className="form-control" onChange={onMailToInputChange} placeholder="email to" />
-                    <input type="text" className="form-control" onChange={onMailFromInputChange} placeholder="mail from" />
                     <input type="file" className="form-control" onChange={onFileInputChange} multiple />
                 </Form.Group>
 
