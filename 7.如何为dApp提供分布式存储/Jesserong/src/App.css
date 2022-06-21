@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ulList li {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#fl0 {
+  display: none;
+}
+
+.btn-reset {
+  margin-left: 6px;
+  border: 1px solid #ddd !important; 
+}
+
+.btn-showList {
+  color:blue !important;
+  margin-top: 33px;
+  border: 1px solid blue !important; 
+}
+
+.btnGroup {
+  margin-top:43px; 
+}
+
+.card {
+  width: 30rem !important;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+  width: 260px !important;
+  margin: 0 auto;
+}
+
+.btn-getMore {
+  width: 200px;
+  color:blue !important;
+  margin-top: 33px;
+  border: 1px solid blue !important; 
+}
+
+.btn-delete {
+  color:red;
+  cursor: pointer;
+}
+
+.ipt-group {
+  margin-top: 25px;
+}
+
+.ipt {
+  width: 250px;
+  height: 44px;
+  border:1px solid #ddd;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding-left: 12px;
+}
+
+.btn-login {
+  width: 250px;
+  margin-top: 25px;
+}
+
+.btn-s {
+  margin: 20px auto; 
+}
+
+.inputFile {
+  width: 250px;
+  margin:0 auto;
+  margin-top: 17px; 
+}
+
+.btn-logout {
+  margin:45px auto;
+}
