@@ -1,0 +1,17 @@
+{
+  "name": "lotus-wallet",
+  "version": "1.0.0",
+  "description": "luojin's homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "filecoin"
+  ],
+  "author": "zmule@163.com",
+  "license": "ISC",
+  "dependencies": {
+    "filecoin.js": "^0.0.5-alpha"
+  }
+}

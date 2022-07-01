@@ -1,0 +1,2 @@
+storeFile cid deal: bafyreigwk4welb5dnwk4gmprkrm4wpq543wrdksdo6ovilqiyeojrbhe34
+transaction  cid: bafy2bzacea3mypsc5c6u532ntdw2eqhtfwwkn7m3whxfh3mjeqbav3uo3mtim
